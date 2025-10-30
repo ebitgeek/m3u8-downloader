@@ -398,7 +398,7 @@
     <!--顶部操作提示-->
     <section class="m-p-action g-box">{{tips}}</section>
     <a class="m-p-help" target="_blank" href="https://github.com/Momo707577045/m3u8-downloader/blob/master/README-EN.md">?</a>
-    <a class="m-p-tamper" target="_blank" href="https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/m3u8-downloader.user.js">tamperMonkey plugin</a>
+    <a class="m-p-tamper" target="_blank" href="https://ebitgeek.github.io/m3u8-downloader/m3u8-downloader.user.js">tamperMonkey plugin</a>
     <a class="m-p-github" target="_blank" href="https://github.com/Momo707577045/m3u8-downloader">github</a>
     <a class="m-p-language" href="https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html">中文版</a>
     <a class="m-p-other" target="_blank" href="https://blog.luckly-mjw.cn/tool-show/index.html">other efficiency tools</a>
@@ -459,9 +459,9 @@
   })();
 </script>
 <!--vue 前端框架-->
-<script src="https://upyun.luckly-mjw.cn/lib/vue.js"></script>
-<script src="https://upyun.luckly-mjw.cn/lib/aes-decryptor.js"></script>
-<script src="https://upyun.luckly-mjw.cn/lib/mux-mp4.js"></script>
+<script src="./vue.js"></script>
+<script src="./aes-decryptor.js"></script>
+<script src="./mux-mp4.js"></script>
 
 <script>
 
@@ -895,15 +895,15 @@
 
           // 加载 ASE 解密
           let $ase = document.createElement('script')
-          $ase.src = 'https://upyun.luckly-mjw.cn/lib/aes-decryptor.js'
+          $ase.src = 'https://ebitgeek.github.io/m3u8-downloader/aes-decryptor.js'
 
           // 加载 mp4 转码
           let $mp4 = document.createElement('script')
-          $mp4.src = 'https://upyun.luckly-mjw.cn/lib/mux-mp4.js'
+          $mp4.src = 'https://ebitgeek.github.io/m3u8-downloader/mux-mp4.js'
 
           // 加载 vue
           let $vue = document.createElement('script')
-          $vue.src = 'https://upyun.luckly-mjw.cn/lib/vue.js'
+          $vue.src = 'https://ebitgeek.github.io/m3u8-downloader/vue.js'
 
           // 监听 vue 加载完成，执行业务代码
           $vue.addEventListener('load', () => {${script}})
