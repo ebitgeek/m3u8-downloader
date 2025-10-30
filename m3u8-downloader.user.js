@@ -256,25 +256,25 @@
           document.body.appendChild($section);
 
           ajax({ // 加载 ASE 解密
-            url: 'https://upyun.luckly-mjw.cn/lib/stream-saver.js',
+            url: 'https://ebitgeek.github.io/m3u8-downloader/stream-saver.js',
             success: (streamSaverStr) => {
               let $streamSaver = document.createElement('script')
               $streamSaver.innerHTML = streamSaverStr
               document.body.appendChild($streamSaver);
               ajax({ // 加载 mp4 转码
-                url: 'https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/mux-mp4.js',
+                url: 'https://ebitgeek.github.io/m3u8-downloader/mux-mp4.js',
                 success: (mp4Str) => {
                   let $mp4 = document.createElement('script')
                   $mp4.innerHTML = mp4Str
                   document.body.appendChild($mp4);
                   ajax({ // 加载 stream 流式下载器
-                    url: 'https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/aes-decryptor.js',
+                    url: 'https://ebitgeek.github.io/m3u8-downloader/aes-decryptor.js',
                     success: (aseStr) => {
                       let $ase = document.createElement('script')
                       $ase.innerHTML = aseStr
                       document.body.appendChild($ase);
                       ajax({ // 加载 vue
-                        url: 'https://upyun.luckly-mjw.cn/lib/vue.js',
+                        url: 'https://ebitgeek.github.io/m3u8-downloader/vue.js',
                         success: (vueStr) => {
                           let $vue = document.createElement('script')
                           $vue.innerHTML = vueStr
